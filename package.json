@@ -1,0 +1,33 @@
+{
+  "name": "execute-sequentially",
+  "version": "1.0.1",
+  "description": "'ExecuteSequentially' is a class for executing functions sequentially. It allows adding functions to a queue and ensures they are executed one by one. The class also supports pausing and stopping the execution of the queue.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:cjs": "tsc --project ./tsconfig.cjs.json",
+    "build:esm": "tsc --project ./tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanDdeng/execute-sequentially.git"
+  },
+  "keywords": [
+    "async",
+    "queue",
+    "sequentially"
+  ],
+  "author": "HanDdeng",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4"
+  },
+  "bugs": {
+    "url": "https://github.com/HanDdeng/execute-sequentially/issues"
+  },
+  "homepage": "https://github.com/HanDdeng/execute-sequentially"
+}
